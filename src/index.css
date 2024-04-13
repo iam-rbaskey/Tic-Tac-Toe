@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Honk&display=swap');
+
+.boxes{
+  display: flex;
+  height: 100px;
+  width: 100px;
+  background-color: #1c213a;
+  border: 2px solid rgb(149, 146, 146);
+  border-radius: 12px;
+  cursor: pointer;
+  
+  
+}
+.board{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

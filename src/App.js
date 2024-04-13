@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import TicTacToe from './components/Tic Tac Toe/TicTacToe';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" items-center justify-center h-screen p-10">
+      <div className=' bg-gradient-to-bl from-[#42047e] to-[#07f49e] h-full w-4/4 rounded-2xl shadow-xl items-center justify-center text-center'>
+        <h1 className='text-white font-extrabold items-center p-4 text-5xl font-font1'>Tic Tac Toe</h1>
+        
+        <TicTacToe />
+        <p className='font-bold text-sm font- opacity-10 '>By-rbaskey</p>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
